@@ -1,0 +1,46 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["import", "react", "react-hooks", "jsx-a11y"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {"argsIgnorePattern": "^_", "varsIgnorePattern": "^_"}
+    ],
+    "no-underscore-dangle": ["warn", {"allow": ["_id"]}],
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    // disable the rule for all files
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  "overrides": [],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
