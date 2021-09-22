@@ -57,8 +57,8 @@ describe('List component', () => {
   test('should fetch offers only once', () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
+
     expect(mockedGetOffers).toHaveBeenCalledTimes(1)
     expect(screen.getByText(/fetching.../i)).toBeInTheDocument()
   })
@@ -66,7 +66,6 @@ describe('List component', () => {
   test('should display an empty list of offers when status is pending', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
 
     const {result} = renderHook(() => useReducer(offersReducer, initialState))
@@ -90,7 +89,6 @@ describe('List component', () => {
   test('should display a list of offers when status is idle', async () => {
     const offers = Array.from({length: 3}, _ => offerBuilder())
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
 
     const {result} = renderHook(() => useReducer(offersReducer, initialState))
@@ -111,7 +109,6 @@ describe('List component', () => {
 
   test('should display an error message when status is error', async () => {
     mockedGetOffers.mockRejectedValueOnce(new Error('Server error'))
-
     render(<List />)
 
     await waitFor(() => {
@@ -124,7 +121,6 @@ describe('List component', () => {
   test('should switch CSS class when user clicks on favorite button', async () => {
     const offers = Array.from({length: 3}, _ => offerBuilder())
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
 
     await waitFor(() => {
@@ -145,7 +141,6 @@ describe('List component', () => {
   test('component state should be set to `idle` on first load', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
 
     const {result} = renderHook<
@@ -160,7 +155,6 @@ describe('List component', () => {
   test('component state should be set to `pending` when fetching data', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
 
     const {result} = renderHook<
@@ -181,7 +175,6 @@ describe('List component', () => {
   test('component state should be set to `idle` after fetching a list of offers', async () => {
     const offers = Array.from({length: 3}, _ => offerBuilder())
     mockedGetOffers.mockResolvedValueOnce(offers)
-
     render(<List />)
 
     const {result} = renderHook<
@@ -203,7 +196,6 @@ describe('List component', () => {
     const offers: Offer[] = []
     const error = new Error('Server error.')
     mockedGetOffers.mockRejectedValueOnce(error)
-
     render(<List />)
 
     const {result} = renderHook<
@@ -219,5 +211,25 @@ describe('List component', () => {
     })
 
     expect(result.current[0]).toEqual({offers, status: 'error', error})
+  })
+
+  test('component state should not change after an unrelated action is dispatched', () => {
+    const offers: Offer[] = []
+    mockedGetOffers.mockResolvedValueOnce(offers)
+    render(<List />)
+
+    const {result} = renderHook<
+      Reducer<State, Action>,
+      [State, Dispatch<Action>]
+    >(() => useReducer(offersReducer, initialState))
+    const [state, dispatch] = result.current
+
+    expect(state).toEqual(initialState)
+
+    act(() => {
+      dispatch({type: '__ACTION_TEST__'} as unknown as Action)
+    })
+
+    expect(result.current[0]).toEqual(initialState)
   })
 })

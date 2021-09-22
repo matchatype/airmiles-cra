@@ -24,6 +24,7 @@ interface ActionRejected {
 }
 
 export type Action = ActionPending | ActionResolved | ActionRejected
+
 export type Reducer<S, A> = (state: S, action: A) => S
 
 export const initialState: State = {
@@ -89,7 +90,7 @@ function List() {
     )
   }
 
-  throw new Error('This should never happen')
+  return null
 }
 
 export default List
