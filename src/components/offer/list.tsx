@@ -69,25 +69,29 @@ function List() {
       })
   }, [])
 
-  if (state.status === 'pending') {
-    return <div>Fetching...</div>
-  }
+  switch (state.status) {
+    case 'pending': {
+      return <div>Fetching...</div>
+    }
 
-  if (state.status === 'error') {
-    return <div>Oops...</div>
-  }
+    case 'error': {
+      return <div>Oops...</div>
+    }
 
-  if (state.status === 'idle') {
-    return (
-      <div className="offers" data-testid="offers">
-        {state.offers.map(offer => {
-          return <Item key={offer.id} offer={offer} />
-        })}
-      </div>
-    )
-  }
+    case 'idle': {
+      return (
+        <div className="offers" data-testid="offers">
+          {state.offers.map(offer => {
+            return <Item key={offer.id} offer={offer} />
+          })}
+        </div>
+      )
+    }
 
-  return null
+    default: {
+      return null
+    }
+  }
 }
 
 export default List
