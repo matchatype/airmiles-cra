@@ -32,10 +32,7 @@ export const initialState: State = {
   offers: [],
 }
 
-export const offersReducer: Reducer<State, Action> = (
-  state: State,
-  action: Action,
-) => {
+export const offersReducer: Reducer<State, Action> = (state, action) => {
   switch (action.type) {
     case 'PENDING': {
       return {...state, status: 'pending'}
