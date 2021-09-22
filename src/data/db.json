@@ -1,0 +1,411 @@
+{
+  "partners": [
+    {
+      "id": "4a755252-876b-478e-9440-42961525e307",
+      "name": "Metro",
+      "regions": [
+        "ON"
+      ],
+      "priority": 20,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> spent in a week (<em>Sunday to Saturday</em>)</p>\r\n",
+      "terms": "<p>Offer valid at participating Metro locations in Ontario, excluding Thunder Bay. Reward Miles will not be awarded on taxes, tobacco, beer, wine, cider, Western Union, lottery, transit tickets, stamps, gift cards, prescription medications, behind the-counter pharmacy items, and purchases from in-store vendors. For details and a list of participating stores, visit metro.ca.</p>\r\n<p> </p>\r\n<p>Use Cash Miles from your Cash Account of your Collector Number in-store in increments of 95 Cash Miles for $10 towards purchases at participating Metro locations (excluding Thunder Bay). You must have accumulated sufficient Cash Miles in your Collector Account in order to use Miles towards in-store purchases. All Rewards offered are subject to the Terms and Conditions of the AIR MILES Reward Program, are subject to change and may be withdrawn without notice.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/metro.html",
+      "logo": {
+        "source": "https://images.ctfassets.net/7m10wxejlkq7/7rS32o94OWeIKE2OY0sQiu/df3202c1bd940a599d987c56e4f5d4b7/Metro.png_dl_1",
+        "alt": "https://images.ctfassets.net/7m10wxejlkq7/7rS32o94OWeIKE2OY0sQiu/df3202c1bd940a599d987c56e4f5d4b7/Metro.png_dl_1"
+      }
+    },
+    {
+      "id": "8967b654-4c62-43b3-9c51-87494c37a9c9",
+      "name": "Cook It",
+      "regions": [
+        "ON",
+        "QC"
+      ],
+      "priority": 400,
+      "baseEarnRate": "<p>Try Cook it for the first time and get <strong>325 Bonus Miles</strong>!<a href=\"#terms-asterisk\">*</a></p>\r\n<p> </p>\r\n<p>Not available to Collectors who have ordered from either Cook it or MissFresh prior to March 20, 2020. Terms and conditions apply.</p>\r\n<p> </p>\r\n",
+      "terms": "<div id=\"terms-asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* Offer valid from March 20 to December 31, 2020. Offer applies only to new Cook it and MissFresh customers who have not placed any order prior to March 20, 2020. For clarification purposes, offer is not valid to Collectors who have ordered from either Cook it or MissFresh prior to March 20, 2020. Bonus Miles cannot be combined with any Cook it discounts or promotions in-market. Bonus Offer applies to all first-time orders placed in the provinces of Quebec and Ontario during the offer period when a valid Collector Number is provided at the time of purchase. Applicable Bonus Miles will be posted to your Collector Account within 120 days from the date of delivery and will be allocated based on your Account preferences. Limit of one (1) 325 Miles Bonus Offer per Collector Number. Cook it reserves the right to change or cancel the offer at any time.</p>\r\n<p>&nbsp;</p>\r\n<p><sup>®™</sup>Trademarks of AM Royalties Limited Partnership used under license by LoyaltyOne, Co. and Les recettes Cook It Inc.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/cook-it.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Cookit.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Cookit.png"
+      }
+    },
+    {
+      "id": "5b3b76e4-706f-47f8-ad74-b2da78ab876a",
+      "name": "RSA",
+      "regions": [
+        "AB",
+        "BC",
+        "NB",
+        "NL",
+        "NS",
+        "NU",
+        null,
+        "ON",
+        "PE",
+        "QC",
+        null
+      ],
+      "priority": 630,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> spent. <em>(including taxes)</em></p>\r\n",
+      "terms": "<p>Visit <a href=\"http://www.rsagroup.ca\" target=\"_blank\">www.rsagroup.ca</a> for Terms and Conditions.</p>\r\n<p>Personal Home and Car Insurance: AIR MILES offer not available in SK, and MB.</p>\r\n<p>Small Business Solutions: AIR MILES offer not available in SK and MB.</p>\r\n<p>&quot;RSA&quot;, Small Business Solutions&quot;, &quot;WA&quot; and the RSA logo are trademarks used under license from RSA Insurance Group plc.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/rsa.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/RSA_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/RSA_4C.png"
+      }
+    },
+    {
+      "id": "aeb693dd-cd23-43ec-b20f-0e3cb8e4f1f9",
+      "name": "Sobeys Ontario",
+      "regions": [
+        "ON"
+      ],
+      "priority": 10,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> spent in a week. (<em>Sunday to Saturday</em>)</p>\r\n",
+      "terms": "<p>* Offer excludes taxes, delivery charges, rental fees, gift cards, Western Union products and services, prescriptions, non-prescription pharmacy services, tobacco products, lottery, deposits, environmental charges, and other goods and services which are non-discountable or excluded by law.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/sobeys.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/SOBEYS_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/SOBEYS_4C.png"
+      }
+    },
+    {
+      "id": "bf6fd740-3b62-4eb6-bb7d-0817d1d47fe6",
+      "name": "Foodland Ontario",
+      "regions": [
+        "ON"
+      ],
+      "priority": 140,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> spent in a week. (<em>Sunday to Saturday</em>) </p>\r\n",
+      "terms": "<p>This Partner is only available in Ontario.</p>\r\n<div id=\"terms-asterisk\" style=\"top: -110.0px;\"> </div>\r\n<p>* Offer excludes taxes, delivery charges, bill payments, rental fees, gift cards, postal products and services, Western Union products and services, prescriptions, non-prescription pharmacy services, tobacco products, lottery, deposits, environmental charges, liquor, fuel, garden centre, and other goods and services which are non-discountable or excluded by law.    </p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/foodland.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/FOODLAND_FRESH_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/FOODLAND_FRESH_4C.png"
+      }
+    },
+    {
+      "id": "dde991ad-a110-4c32-9a3d-4d1eef4228d2",
+      "name": "Sobeys Urban Fresh",
+      "regions": [
+        "ON"
+      ],
+      "priority": 150,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> spent in a week. (<em>Sunday to Saturday</em>)</p>\r\n",
+      "terms": "<div id=\"terms-asterisk\" style=\"top: -110.0px;\"> </div>\r\n<p>* Offer excludes taxes, delivery charges, rental fees, gift cards, Western Union products and services, prescriptions, non-prescription pharmacy services, tobacco products, lottery, deposits, environmental charges, and other goods and services which are non-discountable or excluded by law.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/sobeys-urban-fresh.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/SOBEYS_URBAN%20FRESH_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/SOBEYS_URBAN%20FRESH_4C.png"
+      }
+    },
+    {
+      "id": "120b531a-7033-4156-bc01-a8bd681a9856",
+      "name": "IGA West",
+      "regions": [
+        "AB",
+        "MB",
+        "ON",
+        "SK"
+      ],
+      "priority": 270,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> spent in a week (<em>Sunday to Saturday</em>)</p>\r\n",
+      "terms": "<p>Offer excludes taxes, delivery charges, bill payments, service fees, rental fees, event tickets, gift cards, prepaid cards, postal products and services, Western Union products and services, tobacco products, lottery, transit passes, deposits, environmental charges, Tim Hortons<sup>®</sup> coffee, and any other goods or services which are non-discountable or excluded by law.</p>\r\n<p> </p>\r\n<div id=\"asterisk\" style=\"top: -110.0px;\"> </div>\r\n<p>*<sup>©</sup> 2019 Starbucks<sup>®</sup> Coffee Company. All rights reserved. IGA is responsible for this offer. Starbucks<sup>®</sup> is not responsible for the provision of, or failure to provide, these AIR MILES Reward Miles.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/igawest.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/IGA_WEST_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/IGA_WEST_4C.png"
+      }
+    },
+    {
+      "id": "5b3477ef-b282-426c-9af5-440095e8edcd",
+      "name": "Jean Coutu",
+      "regions": [
+        "QC",
+        "NB",
+        "ON"
+      ],
+      "priority": 160,
+      "baseEarnRate": "<p>Get <strong>1</strong> Mile for every <strong>$15</strong> spent in a week (<em>Saturday to Friday</em>).</p>\r\n<p><strong>New Brunswick only</strong>: Get <strong>2</strong> Miles for every <strong>prescription** filled</strong></p>\r\n",
+      "terms": "<p>Online purchases billed outside Quebec or New Brunswick are not eligible for AIR MILES<sup>®</sup> Reward Miles. Excludes taxes, ecofees, postal services, stamps, lottery tickets, bus tickets, bottle deposits, gift cards, prepaid cards, fundraising products, Fragrance Discovery box sets, prescriptions and other products covered by the Pharmacy Act and its regulations. Cannot be combined with any other Jean Coutu loyalty program, especially the senior discount.</p>\r\n<p> </p>\r\n<p>Some restrictions may apply. The total amount ($$) of prescriptions is not eligible for the cumulative amount of the standard offer. Transactions are posted once the AIR MILES Reward Program receives this information from the location(s) where you shopped. Reward Miles are usually deposited into your Collector Account within 60 days.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/jean-coutu.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/Jean_Coutu_Hor.jpg",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/Jean_Coutu_Hor.jpg"
+      }
+    },
+    {
+      "id": "8dd859c1-55d1-4157-8afc-7607297bdfeb",
+      "name": "Global Pet Foods",
+      "regions": [
+        "BC",
+        "AB",
+        "SK",
+        "MB",
+        "ON",
+        "NB",
+        "NL",
+        "PE",
+        "NS",
+        "YT",
+        "NT",
+        "NU",
+        "TB"
+      ],
+      "priority": 450,
+      "baseEarnRate": "<p>Get <strong>1</strong> Mile for every <strong>$20 </strong>spent in a single transaction.</p>\r\n",
+      "terms": "<div id=\"terms-asterisk\" style=\"top: -110.0px; position: relative;\">&nbsp;</div>\r\n<p>* All Rewards offered are subject to the Terms and Conditions of the AIR MILES Reward Program, are subject to change and may be withdrawn without notice. Some restrictions may apply. Quantities may be limited. See <a href=\"airmiles.ca\" target=\"_blank\">airmiles.ca</a> for details.</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/global-pet-foods.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/GLOBAL%20PET%20FOODS_epl_EN.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/GLOBAL%20PET%20FOODS_epl_EN.png"
+      }
+    },
+    {
+      "id": "9909a4ed-cc32-41e5-a1b2-3ffa616f454b",
+      "name": "Staples Canada",
+      "regions": [
+        "BC",
+        "AB",
+        "SK",
+        "MB",
+        "ON",
+        "NS",
+        "PE",
+        "NL",
+        "NB",
+        "YT",
+        "NT"
+      ],
+      "priority": 260,
+      "baseEarnRate": "<p>Get <strong>1</strong> Mile for every <strong>$40 </strong>spent in a single transaction.</p>\r\n",
+      "terms": "<p>Get 1 AIR MILES Reward Mile for every $40 spent in a single transaction at all participating Staples locations or at Staples.ca after all discounts,exclusions and before taxes.are applied. Exclusions include but are not limited to: all taxes, Bose products,delivery services, assembly services, all gift cards, dining/activities/getaway packages, postage stamps,self-serve copying, charitable donations, electronics levies, environmental and other third-party fees.</p>\r\n<p> </p>\r\n<p>AIR MILES<sup>®</sup> Card must be presented at time of purchase. Miles will be posted to Collector Account within 120 days of promotion end date. Other exclusions may apply. See Staples associate for details.</p>\r\n<p>STAPLES<sup>®</sup> is a registered trademark of Staples Inc., used under license by Staples Canada ULC.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/staples.html",
+      "logo": {
+        "source": "https://images.ctfassets.net/7m10wxejlkq7/2n0bxTNLEEUQImckaUaMS2/428cf06bc7febdccd2b5baf5d588976f/Staples_Mobile_Logo_2018_E.png",
+        "alt": "https://images.ctfassets.net/7m10wxejlkq7/2n0bxTNLEEUQImckaUaMS2/428cf06bc7febdccd2b5baf5d588976f/Staples_Mobile_Logo_2018_E.png"
+      }
+    },
+    {
+      "id": "bcc5ca44-a5e4-42e0-b2e2-0ffca564b6c9",
+      "name": "Gescan",
+      "regions": [
+        "AB",
+        "BC",
+        "MB",
+        "ON",
+        "SK"
+      ],
+      "priority": 860,
+      "baseEarnRate": "<p><strong>Pick-up orders</strong></p>\r\n<p>Get <strong>1</strong> Mile for every <strong>$30</strong> spent in a single transaction.</p>\r\n<p> </p>\r\n<p><strong>Delivery orders</strong></p>\r\n<p>Get <strong>1</strong> Mile for every <strong>$100</strong> spent in a single transaction. </p>\r\n<p> </p>\r\n<p><strong>Supplier-direct orders</strong></p>\r\n<p>Get <strong>1</strong> Mile for every <strong>$300</strong> spent in a single transaction.  <strong></strong></p>\r\n",
+      "terms": "<p>AIR MILES Reward Miles are available to Contractor Account Customers only at this time.</p>\r\n<div id=\"terms-asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* AIR MILES Reward Miles are awarded after full payment of an invoice is received. Purchase amounts are net of tax and are not cumulative. Once you make a transaction at Gescan, there will be a processing time lag of approximately 4 –6 weeks before the Miles will be posted into the Collector Account. If you are a Quebec Collector, you must be a member of CMEQ.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/gescan.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Gescan.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Gescan.png"
+      }
+    },
+    {
+      "id": "01725a4c-1afd-46ec-9062-f7ca1810a756",
+      "name": "Lumen",
+      "regions": [
+        "NB",
+        "NL",
+        "NS",
+        "ON",
+        "PE",
+        "QC"
+      ],
+      "priority": 870,
+      "baseEarnRate": "<p><strong>Pick up orders</strong></p>\r\n<p><a href=\"#asterisk\">*</a>Get <strong>1</strong> Mile for every <strong>$30 </strong>spent.</p>\r\n<p> </p>\r\n<p><strong>Delivery orders (Lumen)</strong></p>\r\n<p><a href=\"#asterisk\">*</a>Get <strong>1</strong> Mile for every <strong>$100</strong> spent.</p>\r\n<p> </p>\r\n<p><strong>Delivery (supplier)</strong></p>\r\n<p><a href=\"#asterisk\">*</a>Get <strong>1</strong> Mile for every <strong>$300 </strong>spent.</p>\r\n",
+      "terms": "<div id=\"asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* AIR MILES Reward Miles are awarded after full payment of an invoice is received. Purchase amounts are net of tax and are not cumulative. Once you make a transaction at Lumen, there will be a processing time lag of approx. 4–6 weeks before the Miles will be posted into the Collector Account.&nbsp;(Program reserved for electricians CMEQ members, ECQ or OEL)</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/lumen.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/LUMEN_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/LUMEN_4C.png"
+      }
+    },
+    {
+      "id": "7ff93c28-e367-4d16-aea4-6d1f7b069623",
+      "name": "HearingLife Canada",
+      "regions": [
+        "AB",
+        "BC",
+        "MB",
+        "NB",
+        "NL",
+        "NS",
+        "NT",
+        "NU",
+        "ON",
+        "PE",
+        "SK",
+        "YT",
+        "TB"
+      ],
+      "priority": 820,
+      "baseEarnRate": "<p><strong>Hearing Tests:</strong><br />\r\nGet <strong>25</strong> AIR MILES<sup>®</sup> Reward Miles on your first <strong>free Hearing Test<a href=\"#asterisk1\">*</a></strong>.</p>\r\n<p> </p>\r\n<p><strong>Hearing Aids:</strong><br />\r\nGet up to <strong>1,000 Miles</strong> upon purchase on select hearing aid models<a href=\"#asterisk2\">**</a>.</p>\r\n",
+      "terms": "<div id=\"asterisk1\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* This offer is non-transferable and valid upon completion of your hearing test. This offer cannot be combined with other promotional offers for hearing tests. Offer not valid in Quebec. Please allow 45 days for Reward Miles to be posted to your Collector Account. Limit one offer per customer per year.</p>\r\n<div id=\"asterisk2\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>** AIR MILES Reward Miles value is non-transferable and depends on select models purchased. Offer not valid in Quebec. Please allow up to 45 days for the Miles to appear in your Collector Account. Limit one offer per Collector Number. Some additional conditions may apply. Please see clinic for details.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/hearing-life.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/HearingLife.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/HearingLife.png"
+      }
+    },
+    {
+      "id": "7f0a8705-8d25-4413-b868-0849aaeb2e0a",
+      "name": "Action Car and Truck Accessories",
+      "regions": [
+        "AB",
+        "BC",
+        "MB",
+        "NB",
+        "NL",
+        "NS",
+        "NT",
+        "NU",
+        "ON",
+        "PE",
+        "SK",
+        "YT"
+      ],
+      "priority": 820,
+      "baseEarnRate": "<p>Get <strong>1</strong> Mile for every <strong>$30</strong> spent.</p>\r\n",
+      "terms": "<div id=\"asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* When you shop at Action you get 1 AIR MILES<sup>®</sup> Reward Mile for every $30 you spend before taxes on anything in our store plus Bonus Miles on these popular products.&nbsp;</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/action-car-and-truck-accessories.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/ACTION%20CAR%20AND%20TRUCK_4C.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/ACTION%20CAR%20AND%20TRUCK_4C.png"
+      }
+    },
+    {
+      "id": "95516f6e-25d3-44fb-a123-e1e542351332",
+      "name": "Shell Residential Heating Oil",
+      "regions": [
+        "ON",
+        null
+      ],
+      "priority": 1000,
+      "baseEarnRate": "<p>Get <strong>1</strong> Mile for every <strong>30L</strong> of residential heating oil.</p>\r\n",
+      "terms": "<div id=\"asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* Limit of 1,500 base Miles within a single transaction. May exceed 1,500 Miles in a single transaction when combined with Bonus Offers. Please allow up to 4 weeks post-promotion for base Miles to be awarded to your Collector Account and up to 12 weeks for Bonus Miles.&nbsp; &nbsp;&nbsp;</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/shell-residential-heating-oil.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Shell_Pecten_logo_RGB.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Shell_Pecten_logo_RGB.png"
+      }
+    },
+    {
+      "id": "e0336320-27aa-40ac-8f96-ec631f043515",
+      "name": "Johnson Insurance",
+      "regions": [
+        "AB",
+        "BC",
+        "NB",
+        "NL",
+        "NS",
+        "ON",
+        "PE"
+      ],
+      "priority": 600,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong> in premium paid towards your home and car insurance.<br />\r\n<em>(including taxes)</em>    </p>\r\n",
+      "terms": "<p>Johnson Insurance is a tradename of Johnson Inc. (&quot;Johnson&quot;), a licensed insurance intermediary, and operates as Johnson Insurance Services in British Columbia. Home and auto policies are underwritten by Royal &amp; Sun Alliance Insurance Company of Canada (&quot;RSA&quot;) in Quebec, and primarily underwritten by Unifund Assurance Company (&quot;Unifund&quot;) in the rest of Canada. Auto insurance not available in BC, SK or MB. Home and auto insurance not available in NU. Johnson, RSA and Unifund share common ownership. Eligibility requirements, limitations, exclusions or additional costs may apply and/or may vary by province or territory.</p>\r\n<div id=\"terms-asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* AIR MILES Reward Miles awarded only on regular home and car insurance policies underwritten by Unifund or RSA (in Quebec). At the time the premium is paid, one (1) Mile is awarded for each $20 in premium (including taxes). Miles are not available in SK or MB. In Quebec, up to a maximum of 15 AIR MILES Reward Miles per month, per policy.&nbsp; &nbsp;&nbsp;</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/johnson.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/creative/campaign/johnson/Johnson-Insurance_crp.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/creative/campaign/johnson/Johnson-Insurance_crp.png"
+      }
+    },
+    {
+      "id": "fbdc481f-3fa4-40e9-b1ca-d4dab4c36c30",
+      "name": "All-Purpose Realty",
+      "regions": [
+        "AB",
+        "BC",
+        "MB",
+        "NB",
+        "NL",
+        "NS",
+        "NT",
+        "NU",
+        "ON",
+        "PE",
+        "SK",
+        "YT"
+      ],
+      "priority": 1000,
+      "baseEarnRate": "<p>Get up to <strong>10,000 Miles</strong> when <strong>using an All-Purpose Realty referral agent to buy or sell a home.</strong><a href=\"#terms-asterisk\">*</a></p>\r\n",
+      "terms": "<div id=\"terms-asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>* All-Purpose Realty must introduce you to the Real Estate Agent to qualify for the AIR MILES Offer. The Offer is not intended to solicit members currently under contract with a REALTOR<sup>®</sup> to buy or sell a home. Your AIR MILES Collector Card must be provided at the time of transaction. Reward Miles awarded will be based on your transaction value. Other exclusions and terms and conditions may apply. All-Purpose Realty will discuss details with you on your initial call and details are provided on their website. Please allow up to 60 days from the time of purchase for Miles to be posted to your Collector Account.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/all-purpose-realty.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/All%20Purpose%20Realty%20Logo.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/All%20Purpose%20Realty%20Logo.png"
+      }
+    },
+    {
+      "id": "b610d287-3ca5-46de-9c2f-94659a5f438b",
+      "name": "Citadel Mortgages",
+      "regions": [
+        "ON"
+      ],
+      "priority": 1000,
+      "baseEarnRate": "<p>Get up to<strong> 1,000 Miles </strong>on<strong> every mortgage that closes with Citadel Mortgages.</strong><br />\r\n</p>\r\n<p><strong> </strong></p>\r\n<p>Get<strong> 500 Bonus Miles, </strong>for<strong> every friend that you refer to a Citadel Mortgage Agent and successfully closes with Citadel Mortgages.<a href=\"#terms-asterisk\">*</a></strong></p>\r\n",
+      "terms": "<div id=\"terms-asterisk\" style=\"position: relative; top: -110.0px;\">&nbsp;</div>\r\n<p>*Qualifying mortgages include: First Mortgages, Second Mortgages, HELOC, and Refinancing and Private Mortgages. To be eligible, the mortgage must close. Cannot be combined with any other offer. Rules are subject to change at any time and a Citadel Mortgage agent will explain all the details to you. An AIR MILES Collector Card must be provided at the time of purchase. Miles awarded for closed mortgages depend on the details of the mortgage in addition to other factors and should be discussed with the Citadel Mortgage Agent. Other exclusions and terms and conditions may apply. See in-store for details. Please allow up to 60 days from the time of purchase for Miles to be posted to your Collector Account. Please see all the details listed below.</p>\r\n<p>Borrower subject to credit and underwriting approval. Not all borrowers will be approved for conventional financing or equity financing. Receipt of borrower’s application does not represent an approval for financing or interest rate guarantee. Restrictions may apply.</p>\r\n<p>Annual APR is subject to approval and underwriting. APR includes all fees and rate which is calculated on a yearly term. APR varies. Contact us for current rates or more information on a specific product. OAC</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/citadel_mortgages.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Citadel.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Citadel.png"
+      }
+    },
+    {
+      "id": "9cee9d2b-f07c-497d-b5b3-15e0ccc775b6",
+      "name": "Premiere Mortgages",
+      "regions": [
+        "NS",
+        "NB",
+        "PE",
+        "NL",
+        "ON"
+      ],
+      "priority": 1000,
+      "baseEarnRate": "<p>Get up to<strong> 500 Miles with your mortgage.</strong><br />\r\n</p>\r\n",
+      "terms": "<p>Offer valid on a minimum 3-year mortgage term. Valid at participating Premiere Mortgage Centre locations in Canada with participating Mortgage Brokers, Agents and Associates. Reward Miles awarded are based on mortgage amount. Miles are awarded after mortgage closing. Limit one (1) per mortgage. AIR MILES Collector Number must be presented at the time of application.</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/premiere_mortgages.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Premiere.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Premiere.png"
+      }
+    },
+    {
+      "id": "2ae1633b-0485-4f8a-9ed1-75d4de0fcab7",
+      "name": "Voilà Ontario",
+      "regions": [
+        "ON"
+      ],
+      "priority": 1000,
+      "baseEarnRate": "<p>Get <strong>1 Mile</strong> for every <strong>$20</strong><a href=\"#asterisk\">*</a> spent cumulatively during the week (Sunday to Saturday as of the delivery/pickup date) on purchases made at Voilà.</p>\r\n",
+      "terms": "<div id=\"asterisk\" style=\"top: -110.0px; position: relative;\">&nbsp;</div>\r\n<p>* Offer excludes taxes, tobacco products, gift cards, delivery charges, bottle deposits, bag charges and other deposits/charges, fluid dairy products, pharmacy, lottery, alcoholic beverages, Well.ca products, Farm Boy products, products sold by third-party vendors and any other items excluded by law or as we determine from time to time. See full <a href=\"https://voila.ca/content/terms-and-conditions\" target=\"_blank\">Terms and Conditions</a></p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/voila-ontario.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Voila_Logo.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/Voila_Logo.png"
+      }
+    },
+    {
+      "id": "faf15ea8-c5c9-49bc-8539-913167a3397f",
+      "name": "Myclosing.ca",
+      "regions": [
+        "ON"
+      ],
+      "priority": 1000,
+      "baseEarnRate": "<p>Get <strong>25</strong> Miles for every legal processing performed for a mortgage refinance</p>\r\n<p>Get <strong>30</strong> Miles for every legal processing performed for the sale of a property</p>\r\n<p>Get <strong>40</strong> Miles for every legal processing performed for the purchase of a property</p>\r\n",
+      "terms": "<p> </p>\r\n<p>Collector must have a valid AIR MILES® Collector Card to qualify for AIR MILES Reward Miles offers on purchase, sale, or refinance transactions. Miles are provided after the customer completes payment on the final invoice for any purchase, sale or refinance transaction.</p>\r\n<p> </p>\r\n<p><sup>®™</sup> Trademarks of AM Royalties Limited Partnership used under license by LoyaltyOne, Co. and Anderson Sinclair PC o/a MyClosing.ca</p>\r\n",
+      "pageUrl": "https://www.airmiles.ca/en/offers/partners/myclosing-ca.html",
+      "logo": {
+        "source": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/MyClosing.png",
+        "alt": "https://www.airmiles.ca/content/dam/airmiles/pdp/logos/MyClosing.png"
+      }
+    }
+  ]
+}

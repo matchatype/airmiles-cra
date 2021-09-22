@@ -17,3 +17,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* App component */
+.container {
+  margin: 1rem;
+}
+
+.offer-list {
+  display: flex;
+}
+
+.logo {
+  width: 8rem;
+  height: auto;
+}
+
+/* List component */
+.offers {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 80rem;
+}
+
+/* Item component */
+.card__item {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid tomato;
+}
+
+.card__item--blue {
+  background-color: lightblue;
+}
+
+.card__item--coral {
+  background-color: lightyellow;
+}
