@@ -89,7 +89,7 @@ function List() {
     }
 
     default: {
-      return null
+      throw new Error(`Unexpected component state.`)
     }
   }
 }
