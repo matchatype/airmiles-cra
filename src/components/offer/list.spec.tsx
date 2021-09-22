@@ -4,13 +4,11 @@ import {build, fake} from '@jackfranklin/test-data-bot'
 import {render, screen, waitFor} from '@testing-library/react'
 import {renderHook} from '@testing-library/react-hooks'
 import user from '@testing-library/user-event'
-import * as faker from 'faker'
 import React, {Dispatch, Reducer, useReducer} from 'react'
 import {act} from 'react-dom/test-utils'
 import type {Offer, Region} from '../../lib/services/offer-service'
 import {getOffers} from '../../lib/services/offer-service'
-import List, {initialState, offersReducer} from './list'
-import {Action, State} from './list'
+import List, {Action, initialState, offersReducer, State} from './list'
 
 jest.mock('../../lib/services/offer-service')
 const mockedGetOffers = getOffers as jest.MockedFunction<typeof getOffers>
@@ -33,7 +31,7 @@ const offerBuilder = build<Offer>('Offer', {
   fields: {
     id: fake(f => f.random.uuid()),
     name: fake(f => f.random.words(3)),
-    regions: [],
+    regions: fake(f => f.random.arrayElement(canadianProvinceList)),
     priority: fake(f => f.random.number({min: 1, max: 1000})),
     baseEarnRate: fake(f => f.random.words(10)),
     terms: fake(f => f.random.words(10)),
@@ -42,10 +40,6 @@ const offerBuilder = build<Offer>('Offer', {
       source: fake(f => f.image.imageUrl()),
       alt: fake(f => f.random.words(3)),
     },
-  },
-  postBuild: offer => {
-    offer.regions = faker.random.arrayElements(canadianProvinceList)
-    return offer
   },
 })
 
