@@ -47,6 +47,10 @@ const offersReducer: Reducer<State, Action> = (
     case 'REJECTED': {
       return {status: 'error', offers: [], error: action.payload}
     }
+
+    default: {
+      return {...state}
+    }
   }
 }
 
