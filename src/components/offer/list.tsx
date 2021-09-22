@@ -3,7 +3,7 @@ import type {Offer} from '../../lib/services/offer-service'
 import {getOffers} from '../../lib/services/offer-service'
 import Item from './item'
 
-interface State {
+export interface State {
   status: 'idle' | 'pending' | 'error'
   offers: Offer[]
   error?: Error
@@ -23,15 +23,15 @@ interface ActionRejected {
   payload: Error
 }
 
-type Action = ActionPending | ActionResolved | ActionRejected
-type Reducer<S, A> = (state: S, action: A) => S
+export type Action = ActionPending | ActionResolved | ActionRejected
+export type Reducer<S, A> = (state: S, action: A) => S
 
-const initialState: State = {
+export const initialState: State = {
   status: 'idle',
   offers: [],
 }
 
-const offersReducer: Reducer<State, Action> = (
+export const offersReducer: Reducer<State, Action> = (
   state: State,
   action: Action,
 ) => {

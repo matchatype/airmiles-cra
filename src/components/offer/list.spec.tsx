@@ -1,11 +1,16 @@
+// noinspection JSUnusedLocalSymbols
+
 import {build, fake} from '@jackfranklin/test-data-bot'
 import {render, screen, waitFor} from '@testing-library/react'
-import * as faker from 'faker'
-import React from 'react'
+import {renderHook} from '@testing-library/react-hooks'
 import user from '@testing-library/user-event'
+import * as faker from 'faker'
+import React, {Dispatch, Reducer, useReducer} from 'react'
+import {act} from 'react-dom/test-utils'
 import type {Offer, Region} from '../../lib/services/offer-service'
 import {getOffers} from '../../lib/services/offer-service'
-import List from './list'
+import List, {initialState, offersReducer} from './list'
+import {Action, State} from './list'
 
 jest.mock('../../lib/services/offer-service')
 const mockedGetOffers = getOffers as jest.MockedFunction<typeof getOffers>
@@ -64,6 +69,15 @@ describe('List component', () => {
 
     render(<List />)
 
+    const {result} = renderHook(() => useReducer(offersReducer, initialState))
+    const [state, _dispatch] = result.current
+
+    expect(state).toEqual({offers: [], status: 'idle'})
+
+    await waitFor(() => {
+      expect(screen.queryByText(/fetching/)).toBeDefined()
+    })
+
     await waitFor(() => {
       const offersWrapperEl = screen.queryByTestId('offers')
       const offerListEl = screen.queryAllByTestId('offer')
@@ -78,6 +92,13 @@ describe('List component', () => {
     mockedGetOffers.mockResolvedValueOnce(offers)
 
     render(<List />)
+
+    const {result} = renderHook(() => useReducer(offersReducer, initialState))
+    const [_state, dispatch] = result.current
+    dispatch({type: 'RESOLVED', payload: offers})
+
+    const [state, _dispatch] = result.current
+    expect(state).toEqual({offers, status: 'idle'})
 
     await waitFor(() => {
       const offersListEl = screen.getByTestId('offers')
@@ -119,5 +140,84 @@ describe('List component', () => {
       expect(firstOffer).toHaveClass('card__item--coral')
       otherOffers.map(offer => expect(offer).toHaveClass('card__item--blue'))
     })
+  })
+
+  test('component state should be set to `idle` on first load', async () => {
+    const offers: Offer[] = []
+    mockedGetOffers.mockResolvedValueOnce(offers)
+
+    render(<List />)
+
+    const {result} = renderHook<
+      Reducer<State, Action>,
+      [State, Dispatch<Action>]
+    >(() => useReducer(offersReducer, initialState))
+    const [state, _dispatch] = result.current
+
+    expect(state).toEqual({offers: [], status: 'idle'})
+  })
+
+  test('component state should be set to `pending` when fetching data', async () => {
+    const offers: Offer[] = []
+    mockedGetOffers.mockResolvedValueOnce(offers)
+
+    render(<List />)
+
+    const {result} = renderHook<
+      Reducer<State, Action>,
+      [State, Dispatch<Action>]
+    >(() => useReducer(offersReducer, initialState))
+    const [state, dispatch] = result.current
+
+    expect(state).toEqual({offers: [], status: 'idle'})
+
+    act(() => {
+      dispatch({type: 'PENDING'})
+    })
+
+    expect(result.current[0]).toEqual({offers: [], status: 'pending'})
+  })
+
+  test('component state should be set to `idle` after fetching a list of offers', async () => {
+    const offers = Array.from({length: 3}, _ => offerBuilder())
+    mockedGetOffers.mockResolvedValueOnce(offers)
+
+    render(<List />)
+
+    const {result} = renderHook<
+      Reducer<State, Action>,
+      [State, Dispatch<Action>]
+    >(() => useReducer(offersReducer, initialState))
+    const [state, dispatch] = result.current
+
+    expect(state).toEqual({offers: [], status: 'idle'})
+
+    act(() => {
+      dispatch({type: 'RESOLVED', payload: offers})
+    })
+
+    expect(result.current[0]).toEqual({offers, status: 'idle'})
+  })
+
+  test('component state should be set to `error` after a fetching error occurs', async () => {
+    const offers: Offer[] = []
+    const error = new Error('Server error.')
+    mockedGetOffers.mockRejectedValueOnce(error)
+
+    render(<List />)
+
+    const {result} = renderHook<
+      Reducer<State, Action>,
+      [State, Dispatch<Action>]
+    >(() => useReducer(offersReducer, initialState))
+    const [state, dispatch] = result.current
+
+    expect(state).toEqual({offers: [], status: 'idle'})
+
+    act(() => {
+      dispatch({type: 'REJECTED', payload: error})
+    })
+
+    expect(result.current[0]).toEqual({offers, status: 'error', error})
   })
 })
