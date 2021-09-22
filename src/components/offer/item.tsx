@@ -19,7 +19,11 @@ function Item({offer}: Props) {
       <h3>{name}</h3>
       <p dangerouslySetInnerHTML={{__html: baseEarnRate}} />
       <div>
-        <button type="button" onClick={handleFavorite}>
+        <button
+          type="button"
+          onClick={handleFavorite}
+          data-testid="favorite-button"
+        >
           Favorite
         </button>
       </div>

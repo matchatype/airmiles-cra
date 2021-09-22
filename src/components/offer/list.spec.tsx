@@ -2,6 +2,7 @@ import {build, fake} from '@jackfranklin/test-data-bot'
 import {render, screen, waitFor} from '@testing-library/react'
 import * as faker from 'faker'
 import React from 'react'
+import user from '@testing-library/user-event'
 import type {Offer, Region} from '../../lib/services/offer-service'
 import {getOffers} from '../../lib/services/offer-service'
 import List from './list'
@@ -96,6 +97,27 @@ describe('List component', () => {
       const errorEl = screen.queryByText(/oops/i)
 
       expect(errorEl).toBeInTheDocument()
+    })
+  })
+
+  test('should switch CSS class when user clicks on favorite button', async () => {
+    const offers = Array.from({length: 3}, _ => offerBuilder())
+    mockedGetOffers.mockResolvedValueOnce(offers)
+
+    render(<List />)
+
+    await waitFor(() => {
+      const offerListEl = screen.getAllByTestId('offer')
+      offerListEl.map(offer => expect(offer).toHaveClass('card__item--blue'))
+
+      const [firstOffer, ...otherOffers] = offerListEl
+      const favoriteButton = firstOffer.querySelector('button')
+      if (favoriteButton) {
+        user.click(favoriteButton)
+      }
+
+      expect(firstOffer).toHaveClass('card__item--coral')
+      otherOffers.map(offer => expect(offer).toHaveClass('card__item--blue'))
     })
   })
 })
