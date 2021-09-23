@@ -29,7 +29,11 @@ export interface Offer {
 const API_ENDPOINT = 'http://localhost:5000/partners'
 
 export const getOffers = (): Promise<Offer[]> => {
-  return fetch(API_ENDPOINT).then(response => {
-    return response.json()
+  return fetch(API_ENDPOINT).then(async response => {
+    const data = await response.json()
+    if (!response.ok) {
+      return Promise.reject(data)
+    }
+    return data
   })
 }
