@@ -218,7 +218,7 @@ describe('List component', () => {
     expect(result.current[0]).toEqual({offers, status: 'error', error})
   })
 
-  test('component state should be set to `error` after a fetching error occurs', async () => {
+  test('component should retry fetching data again when the refetch button is clicked', async () => {
     const error = new Error('Server error.')
     mockedGetOffers.mockRejectedValueOnce(error)
     await act(async () => {
