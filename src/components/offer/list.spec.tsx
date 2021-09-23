@@ -48,13 +48,14 @@ describe('List component', () => {
     mockedGetOffers.mockReset()
   })
 
-  test('should fetch offers only once', () => {
+  test('should fetch offers only once', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-    render(<List />)
+    await act(async () => {
+      render(<List />)
+    })
 
     expect(mockedGetOffers).toHaveBeenCalledTimes(1)
-    expect(screen.getByText(/fetching.../i)).toBeInTheDocument()
   })
 
   test('should display an empty list of offers when status is pending', async () => {
@@ -87,7 +88,9 @@ describe('List component', () => {
 
     const {result} = renderHook(() => useReducer(offersReducer, initialState))
     const [_state, dispatch] = result.current
-    dispatch({type: 'RESOLVED', payload: offers})
+    await act(async () => {
+      dispatch({type: 'RESOLVED', payload: offers})
+    })
 
     const [state, _dispatch] = result.current
     expect(state).toEqual({offers, status: 'idle'})
@@ -135,7 +138,9 @@ describe('List component', () => {
   test('component state should be set to `idle` on first load', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-    render(<List />)
+    await act(async () => {
+      render(<List />)
+    })
 
     const {result} = renderHook<
       Reducer<State, Action>,
@@ -149,7 +154,9 @@ describe('List component', () => {
   test('component state should be set to `pending` when fetching data', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-    render(<List />)
+    await act(async () => {
+      render(<List />)
+    })
 
     const {result} = renderHook<
       Reducer<State, Action>,
@@ -169,7 +176,9 @@ describe('List component', () => {
   test('component state should be set to `idle` after fetching a list of offers', async () => {
     const offers = Array.from({length: 3}, _ => offerBuilder())
     mockedGetOffers.mockResolvedValueOnce(offers)
-    render(<List />)
+    await act(async () => {
+      render(<List />)
+    })
 
     const {result} = renderHook<
       Reducer<State, Action>,
@@ -190,7 +199,9 @@ describe('List component', () => {
     const offers: Offer[] = []
     const error = new Error('Server error.')
     mockedGetOffers.mockRejectedValueOnce(error)
-    render(<List />)
+    await act(async () => {
+      render(<List />)
+    })
 
     const {result} = renderHook<
       Reducer<State, Action>,
@@ -207,10 +218,12 @@ describe('List component', () => {
     expect(result.current[0]).toEqual({offers, status: 'error', error})
   })
 
-  test('component state should not change after an unrelated action is dispatched', () => {
+  test('component state should not change after an unrelated action is dispatched', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)
-    render(<List />)
+    await act(async () => {
+      render(<List />)
+    })
 
     const {result} = renderHook<
       Reducer<State, Action>,
