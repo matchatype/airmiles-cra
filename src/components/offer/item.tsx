@@ -16,8 +16,11 @@ function Item({offer}: Props) {
         favorite ? 'card__item--coral' : 'card__item--blue'
       }`}
     >
-      <h3>{name}</h3>
-      <p dangerouslySetInnerHTML={{__html: baseEarnRate}} />
+      <h3 className="offer__title">{name}</h3>
+      <div
+        dangerouslySetInnerHTML={{__html: baseEarnRate}}
+        className="offer__description"
+      />
       <div>
         <button
           type="button"
