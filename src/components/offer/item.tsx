@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Offer} from '../../lib/services/offer-service'
+import type {Offer} from '../../../types'
 
 function Item({offer}: Props) {
   const [favorite, setFavorite] = useState<boolean>(false)

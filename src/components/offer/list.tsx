@@ -1,31 +1,7 @@
 import React, {useEffect, useReducer} from 'react'
-import type {Offer} from '../../lib/services/offer-service'
+import type {Action, Reducer, State} from '../../../types'
 import {getOffers} from '../../lib/services/offer-service'
 import Item from './item'
-
-export interface State {
-  status: 'idle' | 'pending' | 'error'
-  offers: Offer[]
-  error?: Error
-}
-
-interface ActionPending {
-  type: 'PENDING'
-}
-
-interface ActionResolved {
-  type: 'RESOLVED'
-  payload: Offer[]
-}
-
-interface ActionRejected {
-  type: 'REJECTED'
-  payload: Error
-}
-
-export type Action = ActionPending | ActionResolved | ActionRejected
-
-export type Reducer<S, A> = (state: S, action: A) => S
 
 export const initialState: State = {
   status: 'idle',

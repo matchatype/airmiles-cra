@@ -6,9 +6,9 @@ import {renderHook} from '@testing-library/react-hooks'
 import user from '@testing-library/user-event'
 import React, {Dispatch, Reducer, useReducer} from 'react'
 import {act} from 'react-dom/test-utils'
-import type {Offer, Region} from '../../lib/services/offer-service'
+import type {Action, Offer, Region, State} from '../../../types'
 import {getOffers} from '../../lib/services/offer-service'
-import List, {Action, initialState, offersReducer, State} from './list'
+import List, {initialState, offersReducer} from './list'
 
 jest.mock('../../lib/services/offer-service')
 const mockedGetOffers = getOffers as jest.MockedFunction<typeof getOffers>
