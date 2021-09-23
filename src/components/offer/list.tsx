@@ -75,7 +75,7 @@ function List() {
     }
 
     case 'error': {
-      return <div>Oops...</div>
+      return <div>Oops... {state?.error?.message ?? 'Unknown error'}.</div>
     }
 
     case 'idle': {
