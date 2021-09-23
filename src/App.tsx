@@ -12,7 +12,7 @@ function App() {
         />
         <h1>Air Miles</h1>
       </header>
-      <main className="offer-ist">
+      <main>
         <h2>Technical Interview</h2>
         <List />
       </main>
