@@ -218,6 +218,29 @@ describe('List component', () => {
     expect(result.current[0]).toEqual({offers, status: 'error', error})
   })
 
+  test('component state should be set to `error` after a fetching error occurs', async () => {
+    const error = new Error('Server error.')
+    mockedGetOffers.mockRejectedValueOnce(error)
+    await act(async () => {
+      render(<List />)
+    })
+
+    const {result} = renderHook<
+      Reducer<State, Action>,
+      [State, Dispatch<Action>]
+    >(() => useReducer(offersReducer, initialState))
+    const [state, dispatch] = result.current
+
+    expect(state).toEqual({offers: [], status: 'idle'})
+
+    act(() => {
+      dispatch({type: 'REJECTED', payload: error})
+    })
+    const fetchButton = screen.getByTestId('fetch-button')
+    user.click(fetchButton)
+    expect(mockedGetOffers).toHaveBeenCalledTimes(2)
+  })
+
   test('component state should not change after an unrelated action is dispatched', async () => {
     const offers: Offer[] = []
     mockedGetOffers.mockResolvedValueOnce(offers)

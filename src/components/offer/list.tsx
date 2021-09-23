@@ -36,7 +36,7 @@ function List() {
 
   useEffect(() => {
     dispatch({type: 'PENDING'})
-    getOffers()
+    handleFetching()
       .then(data => {
         dispatch({type: 'RESOLVED', payload: data})
       })
@@ -45,13 +45,28 @@ function List() {
       })
   }, [])
 
+  const handleFetching = async () => {
+    return getOffers()
+  }
+
   switch (state.status) {
     case 'pending': {
       return <div>Fetching...</div>
     }
 
     case 'error': {
-      return <div>Oops... {state?.error?.message ?? 'Unknown error'}.</div>
+      return (
+        <div>
+          <p>Oops... {state?.error?.message ?? 'Unknown error'}.</p>
+          <button
+            type="button"
+            onClick={handleFetching}
+            data-testid="fetch-button"
+          >
+            Retry Fetching
+          </button>
+        </div>
+      )
     }
 
     case 'idle': {
