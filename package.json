@@ -38,7 +38,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "eject": "react-scripts eject",
-    "api:start": "json-server --watch ./src/data/db.json --port 5000"
+    "api:start": "json-server --watch ./data/db.json --port 5000"
   },
   "browserslist": {
     "production": [
