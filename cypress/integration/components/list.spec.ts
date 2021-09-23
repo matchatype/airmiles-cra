@@ -37,6 +37,7 @@ describe('AirMiles Technical Interview App', () => {
       .its('length')
       .then(length => {
         const selected = Cypress._.random(length - 1) // lower = 0 is default
+        cy.get('@offers').eq(selected).should('have.class', 'card__item--blue')
         cy.get('@offers').eq(selected).findByTestId('favorite-button').click()
         cy.get('@offers').eq(selected).should('have.class', 'card__item--coral')
       })
